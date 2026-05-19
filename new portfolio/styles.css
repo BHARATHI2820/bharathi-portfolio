@@ -1,5 +1,5 @@
 /* ============================================================
-   ARUNKUMAR K — Deep-Space Terminal Portfolio
+   BHARATHI K — Deep-Space Terminal Portfolio
    Neon · Glassmorphism · Particle Grid · Dark Tech
    ============================================================ */
 
@@ -979,6 +979,14 @@ footer {
     border-bottom: 1px solid var(--gborder);
     gap: 0.25rem;
   }
+    .proj-featured {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .proj-featured .pc-badge {
+    justify-self: start !important;
+    align-self: flex-start !important;
+  }
   .nav-list.open { display: flex; }
   .nav-toggle { display: flex; }
   .proj-grid { grid-template-columns: 1fr; }
@@ -989,6 +997,7 @@ footer {
   .exp-items { padding-left: 2rem; }
   .ei-line { left: -2rem; width: 1.5rem; }
   .ei-node { left: -2.3rem; }
+  
 }
 
 @media (max-width: 420px) {
@@ -998,4 +1007,28 @@ footer {
   .photo-clip { width: 165px; height: 165px; }
   .or1 { width: 200px; height: 200px; }
   .or2 { width: 235px; height: 235px; }
+}
+
+/* MOBILE PROJECT FIX */
+
+
+@media (max-width: 768px) {
+
+  .projects-grid,
+  .project-grid,
+  .project-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-card {
+    width: 100% !important;
+  }
+
+  .project-content,
+  .project-details {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
 }
