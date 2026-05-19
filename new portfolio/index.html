@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bharathi K — GenAI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-wrap">
+      <a href="#home" class="nav-brand">
+        <span class="brand-icon"><i class="fas fa-terminal"></i></span>
+        <span class="brand-text">Bharathi<span class="brand-accent">.K</span></span>
+      </a>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home"           class="nl active">Home</a></li>
+        <li><a href="#about"          class="nl">About</a></li>
+        <li><a href="#skills"         class="nl">Skills</a></li>
+        <li><a href="#experience"     class="nl">Experience</a></li>
+        <li><a href="#projects"       class="nl">Projects</a></li>
+        <li><a href="#education"      class="nl">Education</a></li>
+        <li><a href="#certifications" class="nl">Certs</a></li>
+        <li><a href="#contact"        class="nl">contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-wrap">
+
+      <div class="hero-photo-side hero-anim" style="--d:0s">
+        <div class="photo-orbit">
+          <div class="orbit-ring or1"></div>
+          <div class="orbit-ring or2"></div>
+          <div class="orbit-dot od1"></div>
+          <div class="orbit-dot od2"></div>
+          <div class="photo-clip">
+            <img src="profile.jpeg" alt="Bharathi K" id="phImg"
+                 onerror="this.style.display='none';document.getElementById('phFB').style.display='flex'"/>
+            <div class="photo-fb" id="phFB">AK</div>
+            <div class="photo-scan"></div>
+          </div>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/bharathi-k-b9844b213/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/BHARATHI2820" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:bharathinathan31@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-text-side">
+        <div class="hero-status hero-anim" style="--d:.05s">
+          <span class="status-led"></span>
+          <span class="fira">sys:ready //</span> Available for opportunities
+        </div>
+        <h1 class="hero-name hero-anim" style="--d:.1s">
+          <span class="hn-first">Bharathi</span>
+          <span class="hn-last neon-text">K</span>
+        </h1>
+        <p class="hero-role hero-anim" style="--d:.18s">
+          <span class="fira role-bracket">&gt;&gt;</span>
+          GenAI Engineer
+          <span class="role-loc"><i class="fas fa-location-dot"></i> Chennai, India</span>
+        </p>
+        <p class="hero-tags hero-anim" style="--d:.24s">
+          RAG Systems <span class="tag-sep">|</span>
+          Conversational AI <span class="tag-sep">|</span>
+          NL-to-SQL <span class="tag-sep">|</span>
+          LLM Workflows
+        </p>
+        <p class="hero-intro hero-anim" style="--d:.3s">
+          GenAI Engineer with experience building enterprise conversational AI systems using RAG, vector databases, NL-to-SQL pipelines, and Azure-hosted LLMs. Worked on production AI applications using Django, React, LangChain, FAISS, and ChromaDB.
+        </p>
+        <div class="hero-btns hero-anim" style="--d:.38s">
+          <a href="#projects" class="btn-neon"><i class="fas fa-code-branch"></i> View Projects</a>
+          <a href="Bharathi_K_GenAI_Engineer_Resume.pdf" download class="btn-ghost-neon">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-scroll"><div class="scroll-line"></div><span class="fira scroll-label">scroll</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 01</span>
+        <h2>About <em>Me</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="about-card neon-card" data-reveal data-delay="100">
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+        <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="about-content">
+          <p>
+            GenAI Engineer with hands-on experience building enterprise conversational AI systems integrating structured databases and unstructured documents.
+          </p>
+          <p>
+            Worked on RAG pipelines, NL-to-SQL systems, vector search, multilingual Voice AI, and real-time business intelligence workflows using Azure-hosted LLMs, LangChain, FAISS, and ChromaDB.
+          </p>
+          <p>
+            Strong focus on scalable AI workflows, backend integration, and production-ready LLM applications using Django, React, PostgreSQL, and Python.
+          </p>
+          <div class="about-metrics">
+            <div class="metric"><span class="metric-val neon-text">1+</span><span class="metric-label">Year Professional</span></div>
+            <div class="metric"><span class="metric-val neon-text">3+</span><span class="metric-label">AI Projects</span></div>
+            <div class="metric"><span class="metric-val neon-text">Production</span><span class="metric-label">LLM Systems</span></div>
+            <div class="metric"><span class="metric-val neon-text">RAG</span><span class="metric-label">Workflows</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 02</span>
+        <h2>Tech <em>Arsenal</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="sk-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head">
+            <div class="sk-ico"><i class="fas fa-brain"></i></div>
+            <h3>GenAI & LLM</h3>
+          </div>
+          <div class="sk-tags">
+            <span>LLM</span><span>RAG</span><span>LangChain</span>
+            <span>Prompt Engineering</span><span>Semantic Search</span>
+            <span>Vector DB</span><span>ChromaDB</span><span>FAISS</span>
+          </div>
+        </div>
+
+        <div class="sk-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head">
+            <div class="sk-ico"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+          </div>
+          <div class="sk-tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>Oracle DB</span>
+          </div>
+        </div>
+
+        <div class="sk-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head">
+            <div class="sk-ico"><i class="fas fa-server"></i></div>
+            <h3>Backend</h3>
+          </div>
+          <div class="sk-tags">
+            <span>Python</span><span>Django</span><span>REST API</span><span>Streamlit</span>
+          </div>
+        </div>
+
+        <div class="sk-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head">
+            <div class="sk-ico"><i class="fas fa-code"></i></div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="sk-tags">
+            <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+        <div class="sk-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head">
+            <div class="sk-ico"><i class="fas fa-microphone"></i></div>
+            <h3>Voice & CV</h3>
+          </div>
+          <div class="sk-tags">
+            <span>Whisper</span><span>gTTS</span><span>FFmpeg</span>
+            <span>YOLOv8</span><span>ResNet50</span>
+          </div>
+        </div>
+
+        <div class="sk-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head">
+            <div class="sk-ico"><i class="fas fa-tools"></i></div>
+            <h3>Tools</h3>
+          </div>
+          <div class="sk-tags">
+            <span>Git</span><span>GitLab</span><span>Postman</span><span>CI/CD</span>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- ✅ FIX 1: closes .container -->
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 03</span>
+        <h2>Professional <em>Experience</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="exp-block">
+
+        <div class="exp-top neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="exp-meta">
+            <div class="exp-icon"><i class="fas fa-robot"></i></div>
+            <div>
+              <h3 class="exp-role">Junior Software Engineer</h3>
+              <p class="exp-co">Prowesstics IT Services · Chennai, India</p>
+            </div>
+          </div>
+          <div class="exp-dur fira">Jun 2025 – Present</div>
+        </div>
+
+        <div class="exp-items">
+
+          <div class="exp-item">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-comments"></i> Conversational AI & LLM Systems</h4>
+              <p>Developed production-grade conversational AI systems for Insurance and Lending domains using Azure-hosted LLMs, RAG workflows, vector databases, and custom backend integrations.</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-database"></i> NL-to-SQL Pipeline Development</h4>
+              <p>Engineered schema-aware SQL generation workflows with intent classification, semantic retrieval, syntax validation, auto-retry logic, and automated chart & summary generation from natural language input.</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-layer-group"></i> RAG & Vector Search Workflows</h4>
+              <p>Built document intelligence pipelines using ChromaDB, FAISS, embeddings, and corpus memory enabling contextual multi-turn retrieval over enterprise documents and structured datasets.</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-microphone"></i> Voice AI Integration</h4>
+              <p>Integrated multilingual Voice AI pipeline using Whisper ASR, gTTS, FFmpeg preprocessing, RMS silence filtering, Django backend services, and React frontend interfaces.</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-code-branch"></i> Deployment & Collaboration</h4>
+              <p>Maintained standalone AI systems independently on Git and contributed to collaborative enterprise AI workflows through GitLab repositories, CI/CD pipelines, API testing, and production validation.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- ✅ FIX 2: closes .container -->
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 04</span>
+        <h2>Key <em>Projects</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="proj-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="proj-card proj-featured">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">01</div>
+          <div class="pc-badge">Featured</div>
+          <h3>Enterprise Conversational AI System</h3>
+          <p>Built production-grade conversational AI systems for Insurance and Lending domains using Azure-hosted LLMs, RAG workflows, vector databases, and schema-aware SQL generation pipelines.</p>
+          <div class="project-links">
+
+            <a href="assets/projects/Conversational_AI/convo-home.png"
+              target="_blank"
+              class="project-btn">
+
+              Standalone UI
+
+            </a>
+
+            <a href="assets/projects/Conversational_AI/Year Converstion.png"
+              target="_blank"
+              class="project-btn">
+
+              Year Convertion 
+
+            </a>
+
+            <a href="assets/projects/Conversational_AI/Prochurn homepage.png"
+              target="_blank"
+              class="project-btn">
+
+              Prochurn UI
+
+            </a>
+
+            <a href="assets/projects/Conversational_AI/retention-ai.png"
+              target="_blank"
+              class="project-btn">
+
+              Prochurn Retention Assistant
+
+            </a>
+
+          </div>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Developed NL-to-SQL workflow with intent classification, schema retrieval, relevance scoring, and auto-retry logic</li>
+            <li><i class="fas fa-chevron-right"></i> Integrated ChromaDB vector search and corpus memory for contextual multi-turn conversations</li>
+            <li><i class="fas fa-chevron-right"></i> Generated automated summaries, charts, and recommendations from natural language queries</li>
+            <li><i class="fas fa-chevron-right"></i> Built independent custom UIs and production-ready backend workflows</li>
+          </ul>
+          <div class="pc-tech">
+            <span>Azure LLM</span><span>LangChain</span><span>ChromaDB</span>
+            <span>Python</span><span>Django</span><span>React</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="proj-card">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">02</div>
+          <h3>Voice-Enabled AI Assistant</h3>
+          <p>Developed multilingual Voice AI pipeline integrating speech recognition, text-to-speech, and conversational AI workflows for real-time interaction.</p>
+          <div class="project-links">
+
+          <a href="assets/projects/AI_Assistant/multilingual-ui.png"
+            target="_blank"
+            class="project-btn">
+
+            View Multilingual UI
+
+          </a>
+
+          <a href="https://drive.google.com/file/d/12zY4VbH-vGRMylbbXRpFQsMVGv5Tl_KK/view?usp=sharing"
+            target="_blank"
+            class="project-btn">
+
+            Watch Demo
+
+          </a>
+
+        </div>
+          
+
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Whisper ASR integration for speech-to-text transcription</li>
+            <li><i class="fas fa-chevron-right"></i> Implemented async audio processing and RMS silence filtering</li>
+            <li><i class="fas fa-chevron-right"></i> Real-time response playback using gTTS and FFmpeg preprocessing</li>
+          </ul>
+          <div class="pc-tech">
+            <span>Whisper</span><span>gTTS</span><span>FFmpeg</span><span>Django</span><span>React</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="proj-card">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">03</div>
+          <h3>RAG-Based Document Intelligence</h3>
+          <p>Built document intelligence chatbot enabling semantic search and contextual response generation over PDFs and enterprise documents.</p>
+          <ul class="pc-bullets">
+          <div class="project-links">
+
+              <a href="assets/projects/Jarvis/Rag.png"
+                target="_blank"
+                class="project-btn">
+
+                View RAG Interface
+
+              </a>
+
+            </div>
+          
+            <li><i class="fas fa-chevron-right"></i> Implemented chunking, embeddings, and semantic retrieval workflows</li>
+            <li><i class="fas fa-chevron-right"></i> Integrated FAISS vector database for fast contextual retrieval</li>
+            <li><i class="fas fa-chevron-right"></i> Built Streamlit-based interactive chatbot interface</li>
+          </ul>
+          <div class="pc-tech">
+            <span>FAISS</span><span>LangChain</span><span>Python</span><span>Streamlit</span><span>RAG</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="proj-card">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">04</div>
+          <h3>Age & Gender Detection System</h3>
+          <p>Developed real-time computer vision system for age and gender classification using YOLOv8, ResNet50, and synthetic data augmentation techniques.</p>
+          <div class="project-links">
+
+            <a href="assets/projects/Gender/Gender.png"
+              target="_blank"
+              class="project-btn">
+
+              View Detection Demo
+
+            </a>
+
+          </div>
+          
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Created synthetic datasets for edge-case training scenarios</li>
+            <li><i class="fas fa-chevron-right"></i> Integrated live camera inference workflows</li>
+            <li><i class="fas fa-chevron-right"></i> Assisted in model evaluation and architecture improvements</li>
+          </ul>
+          <div class="pc-tech">
+            <span>YOLOv8</span><span>ResNet50</span><span>OpenCV</span><span>PyTorch</span>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- ✅ closes .container -->
+
+    <!-- Additional Projects Banner -->
+    <div class="add-proj-banner">
+      <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+      <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+      <p class="fira add-proj-label">// additional_work</p>
+      <div class="add-proj-tags">
+        <span>Power BI Dashboarding</span>
+        <span>Oracle DB Integration</span>
+        <span>Market Research</span>
+        <span>Demo Pitching</span>
+        <span>Gateway Configuration</span>
+      </div>
+    </div>
+
+  </section><!-- ✅ FIX 3: closes #projects -->
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 05</span><!-- ✅ FIX 4: sec-head content added -->
+        <h2>My <em>Education</em></h2>
+        <div class="sec-rule"></div>
+      </div><!-- ✅ sec-head properly closed -->
+
+      <div class="edu-card neon-card">
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+        <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-info">
+          <span class="fira edu-label">MASTER OF COMPUTER APPLICATIONS</span>
+          <h3>Dr. M.G.R Educational and Research Institute</h3>
+          <p><i class="fas fa-location-dot"></i> Chennai, India</p>
+          <p style="margin-top:6px;"><i class="fas fa-calendar-alt"></i> 2022 – 2024</p>
+        </div>
+      </div>
+
+      <div class="edu-card neon-card" style="margin-top:1.5rem;">
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+        <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="edu-icon-wrap"><i class="fas fa-user-graduate"></i></div>
+        <div class="edu-info">
+          <span class="fira edu-label">BACHELOR OF COMPUTER APPLICATIONS</span>
+          <h3>St. Thomas College of Arts and Science</h3>
+          <p><i class="fas fa-location-dot"></i> Chennai, India</p>
+          <p style="margin-top:6px;"><i class="fas fa-calendar-alt"></i> 2019 – 2022</p>
+        </div>
+      </div>
+
+    </div><!-- ✅ closes .container -->
+  </section><!-- ✅ FIX 4: closes #education -->
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 06</span>
+        <h2><em>Certifications</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="cert-grid">
+
+        <!-- CERT 1 -->
+        <div class="cert-card neon-card-sm">
+          <div class="cert-icon"><img src="assets/logo/google.png" alt="Google"></div>
+          <p class="cert-org">Google Cloud Skills Boost</p>
+          <h3>Introduction to Large Language Models</h3>
+          <a href="https://www.skills.google/public_profiles/7179f1d1-cf1d-494c-b623-1140e7a4fbcf/badges/24247831"
+             target="_blank" class="cert-btn">View Credential</a>
+        </div>
+
+        <!-- CERT 2 -->
+        <div class="cert-card neon-card-sm">
+          <div class="cert-icon"><img src="assets/logo/google.png" alt="Google"></div>
+          <p class="cert-org">Google Cloud Skills Boost</p>
+          <h3>Introduction to Generative AI</h3>
+          <a href="https://www.skills.google/public_profiles/7179f1d1-cf1d-494c-b623-1140e7a4fbcf/badges/24247542"
+             target="_blank" class="cert-btn">View Credential</a>
+        </div>
+
+        <!-- CERT 3 -->
+        <div class="cert-card neon-card-sm">
+          <div class="cert-icon"><img src="assets/logo/nptel.jpeg" alt="NPTEL"></div>
+          <p class="cert-org">NPTEL</p>
+          <h3>Programming in Python</h3>
+          <a href="https://drive.google.com/file/d/1F4NN0Mtmkl_M65D6ceHCM5OvUvciFSch/view?usp=sharing"
+             target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+
+        <!-- CERT 4 -->
+        <div class="cert-card neon-card-sm">
+          <div class="cert-icon"><img src="assets/logo/besant.png" alt="Besant"></div>
+          <p class="cert-org">Besant Technologies</p>
+          <h3>Data Analytics Internship</h3>
+          <a href="https://drive.google.com/file/d/18MI1zwcZBjsMvWs1-g39_eWWVoB6lrkL/view?usp=sharing"
+             target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 07</span>
+        <h2>Get In <em>Touch</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="contact-center" data-reveal>
+        <div class="contact-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+          <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <p class="contact-tagline">Open to collaboration, AI projects, and professional networking.</p>
+          <a href="mailto:bharathinathan31@gmail.com" class="contact-main-btn">
+            <i class="fas fa-envelope"></i> bharathinathan31@gmail.com
+          </a>
+          <div class="contact-row">
+            <a href="https://www.linkedin.com/in/bharathi-k-b9844b213/" target="_blank" rel="noopener" class="contact-link-btn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/BHARATHI2820" target="_blank" rel="noopener" class="contact-link-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="tel:+918248754956" class="contact-link-btn">
+              <i class="fas fa-phone"></i> +91 8248754956
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-row">
+      <span class="fira footer-brand">Bharathi.K</span>
+      <span class="footer-mid">GenAI Engineer &mdash; Chennai, India</span>
+      <span class="footer-right">Built with passion &amp; precision</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
