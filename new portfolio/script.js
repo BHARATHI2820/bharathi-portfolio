@@ -1,5 +1,5 @@
 /* ============================================================
-   ARUNKUMAR K — Portfolio Script
+   BHARATHI K — Portfolio Script
    Particles · Nav · Reveal · Tilt · Typed
    ============================================================ */
 
